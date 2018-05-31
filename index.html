@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" >
+<title>Title</title>
+<link href="demo/watch3D.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper"></div>
+
+<script type="text/javascript" src="demo/watch3D.js"></script>
+<script type="text/javascript">
+let w3d = new watch3D({
+    wrapper : ".wrapper",
+    autoplay : true,
+    width: 5000,
+    height : 2500,
+    num : 12,
+    maxY : 25,
+    tips : {
+        0 : {
+            styles : {
+                "height" : "100px",
+                "width" : "100px",
+                "background-color" : "#6cf",
+                "text-align" : "center",
+                "margin-right" : "10px",
+                "color" : "#fff",
+                "cursor" : "pointer"
+            },
+            content : "风景1",
+            callback : function(e){
+                w3d.pause();
+                w3d.changeData({
+                    num : 10,
+                    resource : "demo/sources/4.jpg"
+                },true);
+            }
+        },
+        1 : {
+            styles : {
+                "height" : "100px",
+                "width" : "100px",
+                "background-color" : "#6cf",
+                "text-align" : "center",
+                "margin-right" : "10px",
+                "color" : "#fff"
+            },
+            content : "风景2",
+            callback : function(e){
+                w3d.pause();
+                w3d.changeData({
+                    num : 15,
+                    resource : "demo/sources/1.jpg"
+                },true);
+            }
+        },
+        2 : {
+            styles : {
+                "height" : "100px",
+                "width" : "100px",
+                "background-color" : "#6cf",
+                "text-align" : "center",
+                "margin-right" : "10px",
+                "color" : "#fff"
+            },
+            content : "风景3",
+            callback : function(e){
+                w3d.pause();
+                w3d.changeData({
+                    num : 14,
+                    resource : "demo/sources/6.jpg"
+                },true);
+            }
+        },
+        4 : {
+            styles : {
+                "height" : "100px",
+                "width" : "100px",
+                "background-color" : "#6cf",
+                "text-align" : "center",
+                "margin-right" : "10px",
+                "color" : "#fff"
+            },
+            content : "风景4",
+            callback : function(e){
+                w3d.pause();
+                w3d.changeData({
+                    num : 16,
+                    resource : "demo/sources/8.jpg"
+                },true);
+            }
+        }
+    },
+    resource : "demo/sources/5.jpg",
+});
+</script>
+</body>
+</html>

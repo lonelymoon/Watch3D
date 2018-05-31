@@ -1,0 +1,117 @@
+/*************reset****************/
+html{color:#333;-webkit-text-size-adjust:none;font-family: 'Microsoft Yahei';height: auto;}
+body{height: auto;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+body{font-size:12px;}
+a{color: #333333;text-decoration: none;}
+a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*font*/
+*{
+	/*font-family: "SimHei","Heiti SC","STHeiti","黑体";*/
+	font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+}html,body{
+    height: 100%;
+}
+
+.wrapper{
+    position: relative;
+    height: 100%;
+    max-height: 100%;
+    margin : 0 auto;
+    overflow: hidden;
+}
+
+.watch3D{
+    position: relative;
+    height: 100%;
+}
+
+.watch3D-container{
+    position: relative;
+    height: 100%;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.watch3D-bg{
+    position: absolute;
+    width: 10000px;
+    height: 10000px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(-1500px);
+    transform: translateX(-50%) translateY(-50%) translateZ(-1500px);
+}
+
+.watch3D-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.watch3D-lists{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.watch3D-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50% 0px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.watch3D-tip{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform-origin: 50% 50% 0px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform: translate3d(-50%,-50%,-1px) rotateY(180deg);
+    transform: translate3d(-50%,-50%,-1px) rotateY(180deg);
+    display: block;
+}
+
+.watch3D-tip-wrapper{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    background: #6cf;
+}
+
+.watch3D-tpl-content{
+    position: relative;
+}
