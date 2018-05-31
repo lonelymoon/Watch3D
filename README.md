@@ -167,7 +167,7 @@ let w3d = new watch3D({
 
 ```
 let w3d = new watch3D({
-    autp : false, //不自动完成
+    auto : false, //不自动完成
     wrapper : ".wrapper",
     autoplay : true,
     width: 5000,
